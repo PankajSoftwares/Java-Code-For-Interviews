@@ -2,14 +2,18 @@ import java.util.*;
 
 class FibbonacciDemo{
     public static void main(String[] args) {
+        // To take input from Scanner
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number, how many you want: ");
+
+        // To number validations
         if(!sc.hasNextInt()){
             System.out.println("Warning!, Please Enter a valid number & retry.");
             return;
         }
-        int n = sc.nextInt();
+        int n = sc.nextInt();  // taking input as n
 
+        // To Check for a +ve num
         if (n < 0){
             System.out.println("Please, Enter a Positive number: ");
         }
