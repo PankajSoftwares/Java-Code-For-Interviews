@@ -13,18 +13,19 @@ class FibbonacciDemo{
         if (n < 0){
             System.out.println("Please, Enter a Positive number: ");
         }
-
+        //initialization for first two numbers
         int a = 0;
         int b = 1;
 
         for(int i = 1; i <= n; i++){
             System.out.print(a+ " ");
 
+            //Logic to assign the sum of prev two numbers to 3rd and then move a to b and b to c like
+
             int c = a + b;
             a = b;
             b = c;
         }
-
     }
 }
 
